@@ -7,7 +7,7 @@ def sendMail(body):
         smtp.starttls()
         smtp.ehlo()
 
-        smtp.login('frederikagger123@gmail.com', 'mormor27')
+        smtp.login('frederikagger123@gmail.com', 'password')
 
         subject = 'Corona updates'
         msg = f'Subject: {subject},\n\n{body}'
