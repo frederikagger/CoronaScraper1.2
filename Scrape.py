@@ -14,11 +14,15 @@ for row in table.find_all_next(string=True):
         i = 0
     if i == 2:
         data = row
-        print(data) 
         break
 
+
+data = int((str(data).replace(',', '')))
+
 if data > checkData():
+    print('Sending email')
     sendMail(data)
-    print(data)
-    saveData(data)
+    print('Saving data')
+    saveData(str(data))
+
 

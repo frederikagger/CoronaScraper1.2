@@ -5,6 +5,6 @@ def saveData(message):
 
 def checkData():
     file = open('numberOfcases.txt', 'r')
-    return file.read()
+    return int(file.read())
 
 
